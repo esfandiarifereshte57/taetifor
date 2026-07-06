@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="theme-color" content="#0f3b5c">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="Accio">
+	<meta name="description" content="Accio: یک حساب کاربری. ایمیل، بانکداری، پیام‌رسان، شبکه‌های اجتماعی، ویدئو و هوش مصنوعی — همه در یک جا">
+	<meta property="og:title" content="Accio - طلسم احضار">
+	<meta property="og:description" content="یک حساب کاربری. هر آنچه نیاز دارید. ایمیل، بانکداری، پیام‌رسان، شبکه‌های اجتماعی، ویدئو و هوش مصنوعی">
+	<meta property="og:image" content="https://uploadkon.ir/uploads/d62602_2659965186-3A9F-40D5-81F2-55A1C1CD034D.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Accio - طلسم احضار">
+	<meta name="twitter:description" content="یک حساب کاربری. هر آنچه نیاز دارید">
+	<link rel="manifest" href="manifest.json">
+	<link rel="canonical" href="https://accio.ir">
+	<link rel="apple-touch-icon" href="https://uploadkon.ir/uploads/d62602_2659965186-3A9F-40D5-81F2-55A1C1CD034D.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="https://uploadkon.ir/uploads/d62602_2659965186-3A9F-40D5-81F2-55A1C1CD034D.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="https://uploadkon.ir/uploads/d62602_2659965186-3A9F-40D5-81F2-55A1C1CD034D.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://uploadkon.ir/uploads/d62602_2659965186-3A9F-40D5-81F2-55A1C1CD034D.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="https://uploadkon.ir/uploads/d62602_2659965186-3A9F-40D5-81F2-55A1C1CD034D.png">
+	<link rel="shortcut icon" href="https://uploadkon.ir/uploads/b2df02_26B11F43CF-53BD-4800-A7F9-7D647E8E1A9D.png">
+	<title>Accio - طلسم احضار</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.2/Vazirmatn-font-face.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style>
+		:root {
+			--primary-600: #0f3b5c;
+			--primary-500: #1a5276;
+			--primary-400: #2e86c1;
+			--primary-300: #3d9dd4;
+			--primary-200: #5db3e8;
+			--primary-100: #a8d8f0;
+			
+			--bg-light: #ffffff;
+			--bg-light-secondary: #f8fafc;
+			--bg-light-tertiary: #f4f7fc;
+			--bg-dark: #0a111f;
+			--bg-dark-secondary: #0f1624;
+			--bg-dark-tertiary: #141b2f;
+			
+			--text-light-primary: #0f172a;
+			--text-light-secondary: #475569;
+			--text-light-tertiary: #64748b;
+			--text-dark-primary: #f8fafc;
+			--text-dark-secondary: #cbd5e1;
+			--text-dark-tertiary: #94a3b8;
+			
+			--success: #10b981;
+			--success-light: #d1fae5;
+			--warning: #f59e0b;
+			--warning-light: #fef3c7;
+			--neutral-50: #f9fafb;
+			--neutral-100: #f3f4f6;
+			--neutral-200: #e5e7eb;
+			--neutral-300: #d1d5db;
+			--neutral-400: #9ca3af;
+			--neutral-500: #6b7280;
+			--neutral-600: #4b5563;
+			--neutral-700: #374151;
+			
+			--glass-light-base: rgba(255, 255, 255, 0.72);
+			--glass-light-subtle: rgba(255, 255, 255, 0.55);
+			--glass-light-border: rgba(0, 0, 0, 0.06);
+			--glass-dark-base: rgba(15, 22, 36, 0.64);
+			--glass-dark-subtle: rgba(20, 27, 47, 0.5);
+			--glass-dark-border: rgba(255, 255, 255, 0.08);
+			
+			--shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+			--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+			--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+			--shadow-lg: 0 10px 32px rgba(0, 0, 0, 0.12);
+			--shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.15);
+			--shadow-2xl: 0 32px 72px rgba(0, 0, 0, 0.18);
+			
+			--radius-sm: 8px;
+			--radius-md: 12px;
+			--radius-lg: 16px;
+			--radius-xl: 24px;
+			--radius-2xl: 32px;
+			--radius-full: 48px;
+			
+			--transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+			--transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			--transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		html {
+			scroll-behavior: smooth;
+		}
+		
+		body {
+			font-family: 'Inter', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+			background: var(--bg-light);
+			color: var(--text-light-primary);
+			line-height: 1.6;
+			min-height: 100vh;
+			transition: background var(--transition-slow) ease, color var(--transition-slow) ease;
+			overflow-x: hidden;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			position: relative;
+		}
+		
+		body.dark {
+			background: var(--bg-dark);
+			color: var(--text-dark-primary);
+		}
+		
+		body.rtl {
+			direction: rtl;
+			font-family: 'Vazirmatn', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		}
+		
+		body.ltr {
+			direction: ltr;
+			font-family: 'Inter', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		}
+		
+		.ambient-backdrop {
+			position: fixed;
+			inset: 0;
+			pointer-events: none;
+			z-index: -1;
+			overflow: hidden;
+		}
+		
+		.backdrop-blur-layer {
+			position: fixed;
+			inset: 0;
+			pointer-events: none;
+			z-index: -1;
+			background: radial-gradient(circle at 20% 50%, rgba(46, 134, 193, 0.04) 0%, transparent 50%),
+						radial-gradient(circle at 80% 80%, rgba(46, 134, 193, 0.03) 0%, transparent 50%),
+						radial-gradient(circle at 40% 20%, rgba(46, 134, 193, 0.025) 0%, transparent 50%);
+		}
+		
+		body.dark .backdrop-blur-layer {
+			background: radial-gradient(circle at 20% 50%, rgba(46, 134, 193, 0.025) 0%, transparent 50%),
+						radial-gradient(circle at 80% 80%, rgba(46, 134, 193, 0.02) 0%, transparent 50%),
+						radial-gradient(circle at 40% 20%, rgba(46, 134, 193, 0.015) 0%, transparent 50%);
+		}
+		
+		@keyframes float-drift-smooth {
+			0% {
+				transform: translate(0, 0) scale(1);
+				opacity: 1;
+			}
+			25% {
+				transform: translate(64px, -42px) scale(1.08);
+				opacity: 0.8;
+			}
+			50% {
+				transform: translate(-38px, 38px) scale(0.92);
+				opacity: 1;
+			}
+			75% {
+				transform: translate(-52px, -18px) scale(1.07);
+				opacity: 0.8;
+			}
+			100% {
+				transform: translate(0, 0) scale(1);
+				opacity: 1;
+			}
+		}
+		
+		@keyframes shimmer {
+			0% { opacity: 0.5; }
+			50% { opacity: 1; }
+			100% { opacity: 0.5; }
+		}
+		
+		@keyframes float-up {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		
+		@keyframes scale-in {
+			from {
+				transform: scale(0.92);
+				opacity: 0;
+			}
+			to {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+		
+		@keyframes pulse-soft {
+			0%, 100% {
+				opacity: 1;
+				box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+			}
+			50% {
+				opacity: 0.7;
+				box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+			}
+		}
+		
+		.header {
+			position: fixed;
+			top: 12px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1000;
+			width: calc(100% - 32px);
+			max-width: 800px;
+			animation: float-up 0.6s ease-out;
+		}
+		
+		.header__inner {
+			background: var(--glass-light-base);
+			backdrop-filter: blur(36px);
+			-webkit-backdrop-filter: blur(36px);
+			border: 1px solid var(--glass-light-border);
+			border-radius: var(--radius-full);
+			padding: 10px 24px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 64px;
+			box-shadow: 0 4px 28px rgba(0, 0, 0, 0.04), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+			transition: all var(--transition-base) ease;
+		}
+		
+		body.dark .header__inner {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+			box-shadow: 0 4px 28px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+		}
+		
+		.header:hover .header__inner {
+			background: var(--glass-light-subtle);
+			box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+		}
+		
+		body.dark .header:hover .header__inner {
+			background: rgba(20, 27, 47, 0.56);
+		}
+		
+		.logo-link {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			text-decoration: none;
+			flex-shrink: 0;
+			transition: opacity var(--transition-fast) ease;
+		}
+		
+		.logo-link:hover {
+			opacity: 0.8;
+		}
+		
+		.logo-image {
+			width: 42px;
+			height: 42px;
+			border-radius: var(--radius-lg);
+			object-fit: cover;
+			flex-shrink: 0;
+			box-shadow: var(--shadow-sm);
+			transition: transform var(--transition-fast) ease;
+		}
+		
+		.logo-link:hover .logo-image {
+			transform: scale(1.05);
+		}
+		
+		.logo-text {
+			font-size: 20px;
+			font-weight: 800;
+			letter-spacing: -0.6px;
+			background: linear-gradient(135deg, var(--primary-600), var(--primary-400));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		body.dark .logo-text {
+			background: linear-gradient(135deg, var(--primary-200), var(--primary-100));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		.nav-controls {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		
+		.control-button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			background: rgba(255, 255, 255, 0.48);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			border: 1px solid rgba(0, 0, 0, 0.06);
+			border-radius: var(--radius-lg);
+			cursor: pointer;
+			font-size: 13px;
+			font-weight: 500;
+			color: var(--text-light-primary);
+			transition: all var(--transition-fast) ease;
+			font-family: inherit;
+			padding: 10px 14px;
+			white-space: nowrap;
+			height: 44px;
+		}
+		
+		body.dark .control-button {
+			background: rgba(255, 255, 255, 0.06);
+			border-color: rgba(255, 255, 255, 0.08);
+			color: var(--text-dark-primary);
+		}
+		
+		.control-button:hover {
+			transform: translateY(-2px);
+			background: rgba(255, 255, 255, 0.58);
+			border-color: rgba(0, 0, 0, 0.08);
+		}
+		
+		body.dark .control-button:hover {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.12);
+		}
+		
+		.control-button:active {
+			transform: translateY(0);
+		}
+		
+		.control-button.theme-toggle {
+			width: 44px;
+			padding: 0;
+		}
+		
+		.flag-thumbnail {
+			width: 24px;
+			height: 16px;
+			border-radius: var(--radius-sm);
+			object-fit: cover;
+			flex-shrink: 0;
+		}
+		
+		.language-label {
+			font-weight: 500;
+		}
+		
+		.dropdown-indicator {
+			font-size: 10px;
+			opacity: 0.5;
+		}
+		
+		.lang-modal-overlay {
+			position: fixed;
+			inset: 0;
+			z-index: 9999;
+			background: rgba(0, 0, 0, 0.35);
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			display: none;
+			align-items: center;
+			justify-content: center;
+			animation: fade-in 0.2s ease;
+		}
+		
+		.lang-modal-overlay.active {
+			display: flex;
+		}
+		
+		.lang-modal {
+			background: rgba(255, 255, 255, 0.92);
+			backdrop-filter: blur(48px);
+			-webkit-backdrop-filter: blur(48px);
+			border: 1px solid rgba(255, 255, 255, 0.32);
+			border-radius: var(--radius-2xl);
+			padding: 24px;
+			max-width: 360px;
+			max-height: 72vh;
+			overflow-y: auto;
+			box-shadow: 0 20px 64px rgba(0, 0, 0, 0.1);
+			animation: scale-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+		}
+		
+		body.dark .lang-modal {
+			background: rgba(15, 22, 36, 0.92);
+			border-color: rgba(255, 255, 255, 0.08);
+		}
+		
+		.lang-option {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 14px 16px;
+			border-radius: var(--radius-lg);
+			cursor: pointer;
+			font-size: 14px;
+			color: var(--text-light-secondary);
+			transition: all var(--transition-fast) ease;
+			border: 1px solid transparent;
+		}
+		
+		body.dark .lang-option {
+			color: var(--text-dark-secondary);
+		}
+		
+		.lang-option:hover {
+			background: rgba(0, 0, 0, 0.05);
+			color: var(--text-light-primary);
+		}
+		
+		body.dark .lang-option:hover {
+			background: rgba(255, 255, 255, 0.08);
+			color: var(--text-dark-primary);
+		}
+		
+		.lang-option.active {
+			background: rgba(15, 59, 92, 0.12);
+			color: var(--primary-600);
+			font-weight: 600;
+			border-color: rgba(15, 59, 92, 0.2);
+		}
+		
+		body.dark .lang-option.active {
+			background: rgba(46, 134, 193, 0.15);
+			color: var(--primary-200);
+			border-color: rgba(46, 134, 193, 0.3);
+		}
+		
+		.lang-option-flag {
+			width: 28px;
+			height: 20px;
+			border-radius: var(--radius-sm);
+			object-fit: cover;
+		}
+		
+		.lang-option-name {
+			flex: 1;
+		}
+		
+		.main-content {
+			position: relative;
+			z-index: 1;
+			padding-top: 120px;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+		
+		@media (max-width: 768px) {
+			.main-content {
+				padding-top: 100px;
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+		}
+		
+		.hero-section {
+			text-align: center;
+			padding: 48px 20px 44px;
+			animation: float-up 0.8s ease-out;
+		}
+		
+		.hero-badge {
+			display: inline-block;
+			background: rgba(15, 59, 92, 0.08);
+			border: 1px solid rgba(15, 59, 92, 0.15);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			color: var(--primary-600);
+			padding: 8px 24px;
+			border-radius: var(--radius-full);
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: 0.3px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			transition: all var(--transition-fast) ease;
+		}
+		
+		.hero-badge:hover {
+			background: rgba(15, 59, 92, 0.12);
+			border-color: rgba(15, 59, 92, 0.25);
+		}
+		
+		body.dark .hero-badge {
+			background: rgba(46, 134, 193, 0.12);
+			border-color: rgba(46, 134, 193, 0.25);
+			color: var(--primary-200);
+		}
+		
+		body.dark .hero-badge:hover {
+			background: rgba(46, 134, 193, 0.16);
+			border-color: rgba(46, 134, 193, 0.35);
+		}
+		
+		.hero-title {
+			font-size: clamp(52px, 9vw, 92px);
+			font-weight: 900;
+			line-height: 1.05;
+			margin-bottom: 16px;
+			letter-spacing: -2.8px;
+			background: linear-gradient(135deg, var(--primary-600), var(--primary-400));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		body.dark .hero-title {
+			background: linear-gradient(135deg, var(--primary-100), var(--primary-200));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		.hero-subtitle {
+			font-size: clamp(15px, 2.2vw, 18px);
+			color: var(--text-light-secondary);
+			max-width: 700px;
+			margin: 0 auto 28px;
+			line-height: 1.7;
+			font-weight: 400;
+		}
+		
+		body.dark .hero-subtitle {
+			color: var(--text-dark-secondary);
+		}
+		
+		.founder-info {
+			display: inline-flex;
+			align-items: center;
+			gap: 12px;
+			background: var(--glass-light-base);
+			backdrop-filter: blur(18px);
+			-webkit-backdrop-filter: blur(18px);
+			border: 1px solid var(--glass-light-border);
+			padding: 12px 20px;
+			border-radius: var(--radius-full);
+			font-size: 13px;
+			margin: 24px 0;
+			transition: all var(--transition-fast) ease;
+		}
+		
+		body.dark .founder-info {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+		}
+		
+		.founder-info:hover {
+			background: var(--glass-light-subtle);
+		}
+		
+		body.dark .founder-info:hover {
+			background: rgba(20, 27, 47, 0.56);
+		}
+		
+		.founder-indicator {
+			width: 10px;
+			height: 10px;
+			background: var(--success);
+			border-radius: 50%;
+			animation: pulse-soft 2s infinite;
+			flex-shrink: 0;
+		}
+		
+		.founder-text {
+			color: var(--text-light-secondary);
+			font-weight: 500;
+		}
+		
+		body.dark .founder-text {
+			color: var(--text-dark-secondary);
+		}
+		
+		.date-badge {
+			display: inline-block;
+			background: var(--glass-light-base);
+			backdrop-filter: blur(14px);
+			-webkit-backdrop-filter: blur(14px);
+			border: 1px solid var(--glass-light-border);
+			padding: 10px 22px;
+			border-radius: var(--radius-full);
+			font-size: 13px;
+			font-weight: 500;
+			color: var(--text-light-secondary);
+			margin: 16px 0 28px;
+		}
+		
+		body.dark .date-badge {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+			color: var(--text-dark-secondary);
+		}
+		
+		.hero-actions {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 32px;
+		}
+		
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			padding: 14px 32px;
+			border-radius: var(--radius-lg);
+			font-weight: 600;
+			font-size: 14px;
+			cursor: pointer;
+			border: none;
+			text-decoration: none;
+			transition: all var(--transition-fast) ease;
+			font-family: inherit;
+			white-space: nowrap;
+		}
+		
+		.btn-primary {
+			background: var(--primary-600);
+			color: #fff;
+			box-shadow: 0 8px 24px rgba(15, 59, 92, 0.32);
+		}
+		
+		.btn-primary:hover {
+			background: var(--primary-500);
+			transform: translateY(-2px);
+			box-shadow: 0 12px 32px rgba(15, 59, 92, 0.42);
+		}
+		
+		.btn-primary:active {
+			transform: translateY(0);
+			box-shadow: 0 4px 16px rgba(15, 59, 92, 0.28);
+		}
+		
+		.btn-outline {
+			background: var(--glass-light-base);
+			backdrop-filter: blur(14px);
+			-webkit-backdrop-filter: blur(14px);
+			border: 1.5px solid var(--glass-light-border);
+			color: var(--text-light-primary);
+			transition: all var(--transition-fast) ease;
+		}
+		
+		body.dark .btn-outline {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+			color: var(--text-dark-primary);
+		}
+		
+		.btn-outline:hover {
+			background: rgba(255, 255, 255, 0.88);
+			transform: translateY(-2px);
+			border-color: rgba(0, 0, 0, 0.08);
+		}
+		
+		body.dark .btn-outline:hover {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.12);
+		}
+		
+		.btn-outline:active {
+			transform: translateY(0);
+		}
+		
+		.story-section {
+			background: var(--glass-light-base);
+			backdrop-filter: blur(28px);
+			-webkit-backdrop-filter: blur(28px);
+			border: 1px solid var(--glass-light-border);
+			border-radius: var(--radius-2xl);
+			padding: 48px 44px;
+			margin-bottom: 72px;
+			animation: float-up 0.8s ease-out 0.1s backwards;
+		}
+		
+		body.dark .story-section {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+		}
+		
+		.story-section h2 {
+			font-size: 36px;
+			font-weight: 800;
+			margin-bottom: 20px;
+			letter-spacing: -0.8px;
+			color: var(--text-light-primary);
+		}
+		
+		body.dark .story-section h2 {
+			color: var(--text-dark-primary);
+		}
+		
+		.story-section h3 {
+			font-size: 24px;
+			font-weight: 700;
+			margin: 32px 0 16px;
+			color: var(--primary-600);
+			letter-spacing: -0.3px;
+		}
+		
+		body.dark .story-section h3 {
+			color: var(--primary-200);
+		}
+		
+		.story-section p {
+			font-size: 15px;
+			line-height: 1.85;
+			color: var(--text-light-secondary);
+			margin-bottom: 18px;
+		}
+		
+		body.dark .story-section p {
+			color: var(--text-dark-secondary);
+		}
+		
+		.section-header {
+			text-align: center;
+			margin-bottom: 48px;
+			animation: float-up 0.8s ease-out 0.15s backwards;
+		}
+		
+		.section-header h2 {
+			font-size: clamp(32px, 5.5vw, 44px);
+			font-weight: 900;
+			margin-bottom: 12px;
+			letter-spacing: -1px;
+			color: var(--text-light-primary);
+		}
+		
+		body.dark .section-header h2 {
+			color: var(--text-dark-primary);
+		}
+		
+		.section-header p {
+			font-size: 15px;
+			color: var(--text-light-tertiary);
+		}
+		
+		body.dark .section-header p {
+			color: var(--text-dark-tertiary);
+		}
+		
+		.services-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+			gap: 28px;
+			margin-bottom: 72px;
+		}
+		
+		@media (max-width: 768px) {
+			.services-container {
+				grid-template-columns: 1fr;
+				gap: 24px;
+			}
+		}
+		
+		.service-card {
+			background: var(--glass-light-base);
+			backdrop-filter: blur(24px);
+			-webkit-backdrop-filter: blur(24px);
+			border: 1px solid var(--glass-light-border);
+			border-radius: var(--radius-2xl);
+			padding: 36px 32px;
+			transition: all var(--transition-base) ease;
+			animation: float-up 0.8s ease-out backwards;
+		}
+		
+		.service-card:nth-child(1) { animation-delay: 0.1s; }
+		.service-card:nth-child(2) { animation-delay: 0.15s; }
+		.service-card:nth-child(3) { animation-delay: 0.2s; }
+		.service-card:nth-child(4) { animation-delay: 0.25s; }
+		.service-card:nth-child(5) { animation-delay: 0.3s; }
+		.service-card:nth-child(6) { animation-delay: 0.35s; }
+		.service-card:nth-child(7) { animation-delay: 0.4s; }
+		
+		body.dark .service-card {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+		}
+		
+		.service-card:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 28px 64px rgba(0, 0, 0, 0.14);
+			border-color: rgba(15, 59, 92, 0.2);
+		}
+		
+		body.dark .service-card:hover {
+			box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
+			border-color: rgba(46, 134, 193, 0.15);
+		}
+		
+		.service-top {
+			display: flex;
+			align-items: flex-start;
+			gap: 18px;
+			margin-bottom: 20px;
+		}
+		
+		.service-icon {
+			width: 62px;
+			height: 62px;
+			border-radius: var(--radius-lg);
+			object-fit: cover;
+			flex-shrink: 0;
+			box-shadow: var(--shadow-md);
+			transition: transform var(--transition-fast) ease;
+		}
+		
+		.service-card:hover .service-icon {
+			transform: scale(1.08);
+		}
+		
+		.service-top h3 {
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 4px;
+			color: var(--text-light-primary);
+		}
+		
+		body.dark .service-top h3 {
+			color: var(--text-dark-primary);
+		}
+		
+		.service-description {
+			font-size: 13px;
+			color: var(--text-light-tertiary);
+			line-height: 1.6;
+		}
+		
+		body.dark .service-description {
+			color: var(--text-dark-tertiary);
+		}
+		
+		.service-status {
+			display: inline-block;
+			font-size: 11px;
+			font-weight: 700;
+			padding: 5px 14px;
+			border-radius: var(--radius-md);
+			margin-top: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.4px;
+		}
+		
+		.service-status.available {
+			background: var(--success-light);
+			color: #065f46;
+		}
+		
+		.service-status.coming {
+			background: var(--warning-light);
+			color: #92400e;
+		}
+		
+		.differences-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: 24px;
+			margin-bottom: 72px;
+		}
+		
+		@media (max-width: 768px) {
+			.differences-container {
+				grid-template-columns: 1fr;
+				gap: 20px;
+			}
+		}
+		
+		.difference-card {
+			background: var(--glass-light-base);
+			backdrop-filter: blur(20px);
+			-webkit-backdrop-filter: blur(20px);
+			border: 1px solid var(--glass-light-border);
+			border-radius: var(--radius-2xl);
+			padding: 32px;
+			display: flex;
+			gap: 20px;
+			transition: all var(--transition-base) ease;
+			animation: float-up 0.8s ease-out backwards;
+		}
+		
+		.difference-card:nth-child(1) { animation-delay: 0.05s; }
+		.difference-card:nth-child(2) { animation-delay: 0.1s; }
+		.difference-card:nth-child(3) { animation-delay: 0.15s; }
+		.difference-card:nth-child(4) { animation-delay: 0.2s; }
+		.difference-card:nth-child(5) { animation-delay: 0.25s; }
+		.difference-card:nth-child(6) { animation-delay: 0.3s; }
+		.difference-card:nth-child(7) { animation-delay: 0.35s; }
+		.difference-card:nth-child(8) { animation-delay: 0.4s; }
+		
+		body.dark .difference-card {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+		}
+		
+		.difference-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+			border-color: rgba(15, 59, 92, 0.15);
+		}
+		
+		body.dark .difference-card:hover {
+			box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+			border-color: rgba(46, 134, 193, 0.12);
+		}
+		
+		.difference-number {
+			width: 52px;
+			height: 52px;
+			border-radius: var(--radius-lg);
+			background: var(--primary-600);
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 800;
+			font-size: 16px;
+			flex-shrink: 0;
+		}
+		
+		body.dark .difference-number {
+			background: var(--primary-400);
+		}
+		
+		.difference-content h4 {
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 6px;
+			color: var(--text-light-primary);
+		}
+		
+		body.dark .difference-content h4 {
+			color: var(--text-dark-primary);
+		}
+		
+		.difference-content p {
+			font-size: 13px;
+			color: var(--text-light-tertiary);
+			line-height: 1.65;
+		}
+		
+		body.dark .difference-content p {
+			color: var(--text-dark-tertiary);
+		}
+		
+		.cta-section {
+			text-align: center;
+			padding: 60px 20px 96px;
+			animation: float-up 0.8s ease-out 0.2s backwards;
+		}
+		
+		.cta-card {
+			display: inline-block;
+			background: var(--glass-light-base);
+			backdrop-filter: blur(32px);
+			-webkit-backdrop-filter: blur(32px);
+			border: 1px solid var(--glass-light-border);
+			border-radius: var(--radius-2xl);
+			padding: 48px 52px;
+			max-width: 600px;
+			transition: all var(--transition-base) ease;
+		}
+		
+		body.dark .cta-card {
+			background: var(--glass-dark-base);
+			border-color: var(--glass-dark-border);
+		}
+		
+		.cta-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 32px 80px rgba(0, 0, 0, 0.15);
+			border-color: rgba(15, 59, 92, 0.2);
+		}
+		
+		body.dark .cta-card:hover {
+			box-shadow: 0 32px 80px rgba(0, 0, 0, 0.35);
+			border-color: rgba(46, 134, 193, 0.15);
+		}
+		
+		.cta-card h2 {
+			font-size: clamp(26px, 4.2vw, 38px);
+			font-weight: 900;
+			margin-bottom: 14px;
+			letter-spacing: -0.6px;
+			color: var(--text-light-primary);
+		}
+		
+		body.dark .cta-card h2 {
+			color: var(--text-dark-primary);
+		}
+		
+		.cta-card p {
+			font-size: 15px;
+			color: var(--text-light-secondary);
+			margin-bottom: 32px;
+		}
+		
+		body.dark .cta-card p {
+			color: var(--text-dark-secondary);
+		}
+		
+		.footer {
+			position: relative;
+			z-index: 1;
+			background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+			color: rgba(255, 255, 255, 0.82);
+			text-align: center;
+			padding: 28px 20px;
+			font-size: 13px;
+			letter-spacing: 0.3px;
+			transition: all var(--transition-slow) ease;
+		}
+		
+		.footer:hover {
+			color: rgba(255, 255, 255, 0.92);
+		}
+		
+		@media (max-width: 768px) {
+			.header {
+				top: 8px;
+				width: calc(100% - 16px);
+			}
+			
+			.header__inner {
+				height: 56px;
+				padding: 8px 16px;
+				border-radius: var(--radius-xl);
+			}
+			
+			.logo-text {
+				font-size: 16px;
+			}
+			
+			.logo-image {
+				width: 36px;
+				height: 36px;
+			}
+			
+			.language-label {
+				display: none;
+			}
+			
+			.control-button {
+				padding: 10px 12px;
+				gap: 4px;
+				height: 40px;
+			}
+			
+			.hero-section {
+				padding: 36px 12px 28px;
+			}
+			
+			.story-section {
+				padding: 36px 24px;
+				margin-bottom: 56px;
+			}
+			
+			.section-header {
+				margin-bottom: 36px;
+			}
+			
+			.services-container {
+				margin-bottom: 56px;
+			}
+			
+			.differences-container {
+				margin-bottom: 56px;
+			}
+			
+			.cta-section {
+				padding: 44px 12px 72px;
+			}
+			
+			.cta-card {
+				padding: 36px 28px;
+			}
+		}
+		
+		@media (max-width: 480px) {
+			.hero-title {
+				font-size: clamp(40px, 11vw, 60px);
+			}
+			
+			.hero-badge {
+				font-size: 11px;
+				padding: 6px 16px;
+			}
+			
+			.btn {
+				padding: 12px 24px;
+				font-size: 13px;
+			}
+			
+			.hero-actions {
+				gap: 10px;
+			}
+			
+			.service-card {
+				padding: 28px 24px;
+			}
+			
+			.service-icon {
+				width: 56px;
+				height: 56px;
+			}
+			
+			.difference-card {
+				padding: 24px;
+				gap: 16px;
+			}
+			
+			.difference-number {
+				width: 48px;
+				height: 48px;
+				font-size: 14px;
+			}
+			
+			.section-header h2 {
+				font-size: clamp(24px, 6.5vw, 32px);
+			}
+		}
+	</style>
+</head>
+<body class="ltr">
+	<div class="ambient-backdrop"></div>
+	<div class="backdrop-blur-layer"></div>
+	
+	<div class="lang-modal-overlay" id="languageModal">
+		<div class="lang-modal" id="languageModalContent"></div>
+	</div>
+	
+	<header class="header">
+		<div class="header__inner">
+			<a href="index.html" class="logo-link">
+				<img src="https://uploadkon.ir/uploads/b2df02_26B11F43CF-53BD-4800-A7F9-7D647E8E1A9D.png" alt="Accio Logo" class="logo-image">
+				<span class="logo-text">Accio</span>
+			</a>
+			<nav class="nav-controls">
+				<button class="control-button" id="languageButton">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/960px-Flag_of_Iran.svg.png" alt="Language" class="flag-thumbnail" id="currentLanguageFlag">
+					<span class="language-label" id="currentLanguageLabel">فارسی</span>
+					<i class="fa-solid fa-chevron-down dropdown-indicator"></i>
+				</button>
+				<button class="control-button theme-toggle" id="themeToggle" aria-label="Toggle theme">
+					<i class="fa-solid fa-moon"></i>
+				</button>
+			</nav>
+		</div>
+	</header>
+	
+	<main class="main-content">
+		<section class="hero-section">
+			<span class="hero-badge" data-i18n="hero_badge">طلسم احضار</span>
+			<h1 class="hero-title">Accio</h1>
+			<p class="hero-subtitle" data-i18n="hero_subtitle">یک حساب کاربری. هر آنچه نیاز دارید. ایمیل، بانکداری، پیام‌رسان، شبکه‌های اجتماعی، ویدئو و هوش مصنوعی</p>
+			<div class="founder-info">
+				<span class="founder-indicator"></span>
+				<span class="founder-text" data-i18n="founder">ساخته و پرداخته شده توسط سعدی اسفندیار — تنها توسعه‌دهنده و معمار</span>
+			</div>
+			<div class="date-badge" id="dateDisplay">۱ فروردین ۱۴۰۵</div>
+			<div class="hero-actions">
+				<a href="https://platform.acciolab.ir" class="btn btn-primary" data-i18n="btn_enter_platform">ورود به پلتفرم آکسیو</a>
+				<a href="https://platform.acciolab.ir/register.html" class="btn btn-outline" data-i18n="btn_create_account">ایجاد حساب</a>
+			</div>
+		</section>
+		
+		<section class="story-section">
+			<h2 data-i18n="story_title">داستان آکسیو</h2>
+			<p data-i18n="story_body_p1">آکسیو طلسم احضار از دنیای هری پاتر است. با این ورد، هر شیء دوری به سوی گوینده پرواز می‌کند.</p>
+			<p data-i18n="story_body_p2">این نام انتخاب شد زیرا آکسیو همه چیز را به سوی شما می‌آورد: ایمیل، بانکداری، پیام‌رسان، شبکه‌های اجتماعی، ویدئو و هوش مصنوعی — همه درون یک حساب متحد.</p>
+			<h3 data-i18n="philosophy_title">سیاه‌چاله‌ای به نام آکسیو</h3>
+			<p data-i18n="philosophy_body_p1">تصور کنید سیاه‌چاله‌ای عظیم در مرکز کهکشان — همه چیز به سوی آن کشیده می‌شود. نور، ماده، زمان. آکسیو بالقوه همین است.</p>
+			<h3 data-i18n="logo_title">مثلث ناممکن</h3>
+			<p data-i18n="logo_body">لوگوی آکسیو یک مثلث ناممکن است. نمادی از ظهور از دل شرایط ناممکن. مانند طلسم احضار، آن چیزی را احضار می‌کند که به نظر دور و دستنیافتنی است.</p>
+		</section>
+		
+		<section>
+			<div class="section-header">
+				<h2 data-i18n="services_title">اکوسیستم آکسیو</h2>
+				<p data-i18n="services_subtitle">هفت سرویس، یک حساب، امکانات بی‌نهایت.</p>
+			</div>
+			<div class="services-container" id="servicesGrid"></div>
+		</section>
+		
+		<section>
+			<div class="section-header">
+				<h2 data-i18n="diffs_title">تفاوت‌های آکسیو</h2>
+				<p data-i18n="diffs_subtitle">هشت دلیل برای انتخاب آکسیو.</p>
+			</div>
+			<div class="differences-container" id="differencesGrid"></div>
+		</section>
+		
+		<section class="cta-section">
+			<div class="cta-card">
+				<h2 data-i18n="cta_title">آماده‌اید وارد دنیای آکسیو شوید؟</h2>
+				<p data-i18n="cta_body">امروز به آکسیو بپیوندید. یک حساب، خدمات بی‌نهایت. زندگی دیجیتال یکپارچه شما در انتظار است.</p>
+				<a href="https://platform.acciolab.ir" class="btn btn-primary" data-i18n="btn_goto_platform">رفتن به پلتفرم آکسیو</a>
+			</div>
+		</section>
+	</main>
+	
+	<footer class="footer">
+		<span data-i18n="footer_text">© 2026 Accio. ساخته شده توسط سعدی اسفندیار. تمام حقوق محفوظ نیست و میتوانید هر کاری باهاش بکنید</span>
+	</footer>
+	
+	<script>
+		const languageFlags = {
+			fa: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/960px-Flag_of_Iran.svg.png',
+			en: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg',
+			ar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1280px-Flag_of_Saudi_Arabia.svg.png',
+			tr: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg',
+			ru: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/960px-Flag_of_Russia.svg.png',
+			de: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png',
+			es: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/3840px-Flag_of_Spain.svg.png',
+			fr: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png',
+			zh: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/1280px-Flag_of_the_People%27s_Republic_of_China.svg.png',
+			ja: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png',
+			ko: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1280px-Flag_of_South_Korea.svg.png',
+			hi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png',
+			pt: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png',
+			it: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png',
+			nl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1280px-Flag_of_the_Netherlands.svg.png',
+			pl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1280px-Flag_of_Poland.svg.png',
+			uk: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/1280px-Flag_of_Ukraine.svg.png',
+			ro: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/1280px-Flag_of_Romania.svg.png',
+			id: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1280px-Flag_of_Indonesia.svg.png',
+			tl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1280px-Flag_of_the_Philippines.svg.png'
+		};
+		
+		const languageNames = {
+			fa: 'فارسی',
+			en: 'English',
+			ar: 'العربية',
+			tr: 'Türkçe',
+			ru: 'Русский',
+			de: 'Deutsch',
+			es: 'Español',
+			fr: 'Français',
+			zh: '中文',
+			ja: '日本語',
+			ko: '한국어',
+			hi: 'हिन्दी',
+			pt: 'Português',
+			it: 'Italiano',
+			nl: 'Nederlands',
+			pl: 'Polski',
+			uk: 'Українська',
+			ro: 'Română',
+			id: 'Bahasa Indonesia',
+			tl: 'Tagalog'
+		};
+		
+		const localizedDates = {
+			fa: '۱ فروردین ۱۴۰۵',
+			en: '21 March 2026',
+			ar: '۱ رمضان ۱۴۴۷',
+			tr: '21 Mart 2026',
+			ru: '21 Марта 2026',
+			de: '21. März 2026',
+			es: '21 de Marzo de 2026',
+			fr: '21 Mars 2026',
+			zh: '2026年3月21日',
+			ja: '2026年3月21日',
+			ko: '2026년 3월 21일',
+			hi: '21 मार्च 2026',
+			pt: '21 de Março de 2026',
+			it: '21 Marzo 2026',
+			nl: '21 Maart 2026',
+			pl: '21 marca 2026',
+			uk: '21 Березня 2026',
+			ro: '21 Martie 2026',
+			id: '21 Maret 2026',
+			tl: '21 Marso 2026'
+		};
+		
+		const translations = {
+			fa: {
+				hero_badge: 'طلسم احضار',
+				hero_subtitle: 'یک حساب کاربری. هر آنچه نیاز دارید. ایمیل، بانکداری، پیام‌رسان، شبکه‌های اجتماعی، ویدئو و هوش مصنوعی — همه در یک جا',
+				founder: 'ساخته و پرداخته شده توسط سعدی اسفندیار — تنها توسعه‌دهنده و معمار',
+				btn_enter_platform: 'ورود به پلتفرم آکسیو',
+				btn_create_account: 'ایجاد حساب',
+				story_title: 'داستان آکسیو',
+				story_body_p1: 'آکسیو طلسم احضار از دنیای هری پاتر است. با این ورد، هر شیء دوری به سوی گوینده پرواز می‌کند. اصل واژه از لاتین «accire» (احضار کردن) می‌آید.',
+				story_body_p2: 'این نام انتخاب شد زیرا آکسیو همه چیز را به سوی شما می‌آورد: ایمیل، بانکداری، پیام‌رسان، شبکه‌های اجتماعی، ویدئو و هوش مصنوعی — همه درون یک حساب متحد. چنانچه این طلسم، آکسیو اختیار دارد تمام چیزهایی را که به شما نیاز است کشش دهد.',
+				philosophy_title: 'سیاه‌چاله‌ای به نام آکسیو',
+				philosophy_body_p1: 'تصور کنید سیاه‌چاله‌ای عظیم در مرکز کهکشان — همه چیز به سوی آن کشیده می‌شود. نور، ماده، زمان. آکسیو بالقوه همین است. نیروی گرانشی فوق‌العاده در دنیای دیجیتال، تمام چیزهایتان را کشش می‌دهد به سوی نقطه یکتایی.',
+				logo_title: 'مثلث ناممکن',
+				logo_body: 'لوگوی آکسیو یک مثلث ناممکن (مثلث پنروز) است. نمادی از ظهور از دل شرایط ناممکن. مانند طلسم احضار، آن چیزی را احضار می‌کند که به نظر دور و دستنیافتنی است. این شکل تمثیل است برای تحقق آنچه واقع‌انگیختگی‌ها بدان شک دارند.',
+				services_title: 'اکوسیستم آکسیو',
+				services_subtitle: 'هفت سرویس، یک حساب، امکانات بی‌نهایت.',
+				diffs_title: 'تفاوت‌های آکسیو',
+				diffs_subtitle: 'هشت دلیل برای انتخاب آکسیو.',
+				cta_title: 'آماده‌اید وارد دنیای آکسیو شوید؟',
+				cta_body: 'امروز به آکسیو بپیوندید. یک حساب، خدمات بی‌نهایت. زندگی دیجیتال یکپارچه شما در انتظار است.',
+				btn_goto_platform: 'رفتن به پلت��رم آکسیو',
+				footer_text: '© 2026 Accio. ساخته شده توسط سعدی اسفندیار. تمام حقوق محفوظ نیست و میتوانید هر کاری باهاش بکنید',
+				available: 'در دسترس',
+				coming_soon: 'به زودی',
+				amail_desc: 'سرویس ایمیل حرفه‌ای با رمزگذاری کامل سرتاسری. دامنه اختص��صی، فضای ابری برای پیوست‌ها، فیلتر هوشمند، پاسخ خودکار و محافظت پیشرفته برابر هرزنامه.',
+				gringotts_desc: 'بانکداری دیجیتال کامل با کیف پول گالیون. کارت‌های بانکی مجازی با شبا، انتقال وجه کارت به کارت فوری، سیستم‌های پرداخت پایا، ستنا و پل.',
+				hedwig_desc: 'پیام‌رسان امن با رمزگذاری سرتاسری. پیام‌های ناپدیدشونده، چت‌های گروهی، کانال‌ها، استیکر سفارشی و واکنش‌ها. بدون ذخیره‌سازی سمت سرور.',
+				lumos_desc: 'شبکه اجتماعی برای خلاقان، هنرمندان و اندیشمندان. انتشار محتوای بلند و کوتاه، نمایش نمونه‌کار، عضویت در انجمن‌های تخصصی. سیستم امتیازدهی خلاقانه به جای لایک ساده.',
+				weasley_desc: 'پلتفرم ویدئوی بلند برای تولیدکنندگان محتوا. آپلود 4K، کانال‌های اختصاصی، درآمدزایی شفاف، پخش زنده و زیرنویس خودکار چندزبانه. بدون الگوریتم.',
+				granger_desc: 'پلتفرم ویدئوی کوتاه برای استعدادیابی. ویدئوهای 15 تا 60 ثانیه، استعدادیابی هوشمند، چالش‌های خلاقانه و روند. ابزارهای ویرایش داخلی.',
+				hermione_desc: 'دستیار هوش مصنوعی پیشرفته با پردازش متن طبیعی. کمک در نوشتن، برنامه‌ریزی و تحقیق. ترجمه فوری میان 20 زبان. تجزیه‌تحلیل اسناد و استخراج اطلاعات.',
+				diff1_title: 'یک حساب، همه چیز',
+				diff1_desc: 'با یک ثبت‌نام به تمام هفت سرویس دسترسی دارید. دیگر خبری از هویت دیجیتال پراکنده. یک ورود، یک داشبورد، یک تجربه بی‌درز.',
+				diff2_title: 'حریم خصوصی اولویت اول',
+				diff2_desc: 'داده‌های شما هرگز فروخته نمی‌شود. تبلیغات هدفمند وجود ندارد. هرگز. رمزگذاری سرتاسری پیش‌فرض است، نه گزینه.',
+				diff3_title: 'بدون وابستگی خارجی',
+				diff3_desc: 'تمام سرویس‌ها روی زیرساخت مستقل اجرا می‌شوند، بدون کنترل شخص ثالث. بدون وابستگی به ابر بزرگ‌های فناوری.',
+				diff4_title: 'شفاف و باز',
+				diff4_desc: 'معماری سیستم شفاف است. بدون الگوریتم‌های پنهان. بدون جعبه سیاه. شما می‌توانید دقیقاً درک کنید چگونه داده‌های شما جریان می‌یابد.',
+				diff5_title: 'آماده برای آینده',
+				diff5_desc: 'سرویس‌های جدید به طور مداوم با رشد اکوسیستم اضافه می‌شوند. پلتفرم با نیازهای شما تکامل می‌یابد.',
+				diff6_title: 'جامعه‌محور',
+				diff6_desc: 'بازخورد کاربران پلتفرم را شکل می‌دهد. شما فقط یک کاربر نیستید؛ شما بخشی از تکامل هستید.',
+				diff7_title: 'بدون دستور کار سیاسی',
+				diff7_desc: 'آکسیو یک پلتفرم تکنولوژی است، نه یک سازمان سیاسی. ما ابزار فراهم می‌کنیم، نظر نه.',
+				diff8_title: 'صفر استخراج داده',
+				diff8_desc: 'داده‌های شما مال شماست، نه ما. ما اطلاعات شخصی شما را استخراج، تحلیل یا بهره‌برداری نمی‌کنیم. نقطه پایان.'
+			},
+			en: {
+				hero_badge: 'The Summoning Charm',
+				hero_subtitle: 'One account. Everything you need. Email, banking, messaging, social media, video, and AI — all summoned to one place.',
+				founder: 'Founded & Built by Saadi Esfandiar — Sole Developer & Architect',
+				btn_enter_platform: 'Enter Accio Platform',
+				btn_create_account: 'Create Account',
+				story_title: 'The Story of Accio',
+				story_body_p1: 'Accio is the Summoning Charm from the world of Harry Potter. With this spell, any distant object flies toward the caster. The incantation originates from the Latin "accire," meaning to summon or summon forth.',
+				story_body_p2: 'This name was chosen because Accio brings everything to you: email, banking, messaging, social media, video, and artificial intelligence — all in one unified account. Like the Accio charm, it summons everything you need.',
+				philosophy_title: 'The Black Hole Called Accio',
+				philosophy_body_p1: 'Imagine a colossal black hole at the center of a galaxy — everything is pulled toward it. Light, matter, time. Accio is exactly that. An extraordinary gravitational force in the digital world, pulling all your essentials toward a single point.',
+				logo_title: 'The Impossible Triangle',
+				logo_body: 'The Accio logo is an impossible triangle (Penrose triangle). It is a symbol of emergence from impossible conditions. Like the Accio charm, it summons what seems unreachable. This shape represents the realization of what skeptics doubt.',
+				services_title: 'Accio Ecosystem',
+				services_subtitle: 'Seven services, one account, endless possibilities.',
+				diffs_title: 'What Makes Accio Different',
+				diffs_subtitle: 'Eight reasons to choose Accio over anything else.',
+				cta_title: 'Ready to Enter the World of Accio?',
+				cta_body: 'Join Accio today. One account, infinite services. Your unified digital life awaits.',
+				btn_goto_platform: 'Go to Accio Platform',
+				footer_text: '© 2026 Accio. Built by Saadi Esfandiar. All rights reserved.',
+				available: 'Available',
+				coming_soon: 'Coming Soon',
+				amail_desc: 'Professional email service with full end-to-end encryption. Custom domains, cloud storage for attachments, smart filters, auto-reply, and advanced spam protection. No ads.',
+				gringotts_desc: 'Complete digital banking with Galleon wallet. Virtual bank cards with IBAN, instant card-to-card transfers, Paya, Satna, and PEL payment systems. Loan plans with instant approval.',
+				hedwig_desc: 'Secure messaging with end-to-end encryption. Disappearing messages, group chats, channels, custom stickers, and reactions. No server-side storage. Complete privacy guaranteed.',
+				lumos_desc: 'A social network for creators, artists, and thinkers. Publish long and short-form content, showcase portfolios, join specialized forums. Creative scoring system instead of simple likes. No ads.',
+				weasley_desc: 'Long-form video platform for content creators. 4K uploads, dedicated channels, transparent monetization, live streaming, and automatic multilingual subtitles. No algorithmic control.',
+				granger_desc: 'Short-form video platform for talent discovery. 15-60 second videos, smart talent scouting, creative challenges and trends, built-in editing tools. Feed without addictive algorithms.',
+				hermione_desc: 'Advanced AI assistant with natural language processing. Helps with writing, planning, and research. Instant translation between 20 languages. Document analysis and information extraction. Integration with all Accio services.',
+				diff1_title: 'One Account, Everything',
+				diff1_desc: 'With a single sign-up, you get access to all seven services. No more scattered digital identity. One login, one dashboard, one seamless experience.',
+				diff2_title: 'Privacy First',
+				diff2_desc: 'Your data is never sold. No targeted ads. Ever. End-to-end encryption is the default, not an option.',
+				diff3_title: 'No External Dependencies',
+				diff3_desc: 'All services run on independent infrastructure, free from third-party control. No Big Tech cloud dependencies.',
+				diff4_title: 'Transparent & Open',
+				diff4_desc: 'Clear system architecture. No hidden algorithms. No black boxes. You can understand exactly how your data flows.',
+				diff5_title: 'Future-Ready',
+				diff5_desc: 'New services are continuously added as the ecosystem grows. The platform evolves with your needs.',
+				diff6_title: 'Community-Driven',
+				diff6_desc: 'User feedback shapes the platform. You are not just a user; you are part of the evolution.',
+				diff7_title: 'No Political Agenda',
+				diff7_desc: 'Accio is a technology platform, not a political organization. We provide tools, not opinions.',
+				diff8_title: 'Zero Data Mining',
+				diff8_desc: 'Your data belongs to you, not us. We do not mine, analyze, or monetize your personal information. Full stop.'
+			},
+			ar: {
+				hero_badge: 'تعويذة الاستدعاء',
+				hero_subtitle: 'حساب واحد. كل ما تحتاجه. البريد الإلكتروني، الخدمات المصرفية، المراسلة، وسائل التواصل الاجتماعي، الفيديو والذكاء الاصطناعي — كل شيء مستدعى إلى مكان واحد.',
+				founder: 'أسسها وبناها سعدي اسفنديار — المطور والمعماري الوحيد',
+				btn_enter_platform: 'دخول منصة أكيو',
+				btn_create_account: 'إنشاء حساب',
+				story_title: 'قصة أكيو',
+				story_body_p1: 'أكيو هو تعويذة الاستدعاء من عالم هاري بوتر. بهذه التعويذة، أي شيء بعيد يطير نحو الملقي. أصل الكلمة من اللاتينية "accire" بمعنى استدعاء أو استحضار.',
+				story_body_p2: 'تم اختيار هذا الاسم لأن أكيو يجلب لك كل شيء: البريد الإلكتروني، الخدمات المصرفية، المراسلة، وسائل التواصل الاجتماعي، الفيديو والذكاء الاصطناعي — كل هذا في حساب موحد واحد.',
+				philosophy_title: 'الثقب الأسود المسمى أكيو',
+				philosophy_body_p1: 'تخيل ثقبًا أسود هائلًا في مركز مجرة — كل شيء يُسحب نحوه. الضوء، المادة، الزمن. أكيو هو بالضبط ذلك. قوة جاذبة استثنائية في العالم الرقمي.',
+				logo_title: 'المثلث المستحيل',
+				logo_body: 'شعار أكيو هو مثلث مستحيل (مثلث بنروز). إنه رمز للانبثاق من الظروف المستحيلة. مثل تعويذة الاستدعاء، يستدعي ما يبدو بعيد المنال.',
+				services_title: 'نظام أكيو البيئي',
+				services_subtitle: 'سبع خدمات، حساب واحد، إمكانيات لا نهائية.',
+				diffs_title: 'ما يميز أكيو',
+				diffs_subtitle: 'ثمانية أسباب لاختيار أكيو.',
+				cta_title: 'هل أنت مستعد لدخول عالم أكيو؟',
+				cta_body: 'انضم إلى أكيو اليوم. حساب واحد، خدمات لا نهائية. حياتك الرقمية الموحدة في انتظارك.',
+				btn_goto_platform: 'الذهاب إلى منصة أكيو',
+				footer_text: '© 2026 أكيو. بناها سعدي اسفنديار. جميع الحقوق محفوظة.',
+				available: 'متاح',
+				coming_soon: 'قريباً',
+				amail_desc: 'خدمة بريد إلكتروني احترافية مع تشفير كامل من طرف إلى طرف. نطاقات مخصصة، تخزين سحابي للمرفقات، فلاتر ذكية، رد آلي وحماية متقدمة من الرسائل غير المرغوبة.',
+				gringotts_desc: 'خدمات مصرفية رقمية كاملة مع محفظة جاليون. بطاقات بنكية افتراضية مع IBAN، تحويلات فورية من بطاقة إلى بطاقة، أنظمة الدفع Paya و Satna و PEL.',
+				hedwig_desc: 'مراسلة آمنة مع تشفير من طرف إلى طرف. رسائل مختفية، محادثات جماعية، قنوات، ملصقات وتفاعلات مخصصة. بدون تخزين على الخادم.',
+				lumos_desc: 'شبكة اجتماعية للمبدعين والفنانين والمفكرين. نشر محتوى طويل وقصير، عرض الأعمال، منتديات متخصصة. نظام تصنيف إبداعي بدلاً من الإعجابات البسيطة.',
+				weasley_desc: 'منصة فيديو طويلة لصناع المحتوى. رفع بدقة 4K، قنوات مخصصة، تحقيق دخل شفاف، بث مباشر، وترجمات متعددة اللغات تلقائية.',
+				granger_desc: 'منصة فيديو قصيرة لاكتشاف المواهب. فيديوهات من 15 إلى 60 ثانية، استكشاف ذكي للمواهب، تحديات وتوجهات إبداعية، أدوات تحرير مدمجة.',
+				hermione_desc: 'مساعد ذكاء اصطناعي متقدم مع معالجة نصية طبيعية. يساعد في الكتابة والتخطيط والبحث. ترجمة فورية بين 20 لغة. تحليل الوثائق واستخراج المعلومات.',
+				diff1_title: 'حساب واحد، كل شيء',
+				diff1_desc: 'بتسج��ل واحد، تحصل على جميع الخدمات السبع. لا مزيد من الهوية الرقمية المشتتة. تسجيل دخول واحد، لوحة معلومات واحدة، تجربة سلسة واحدة.',
+				diff2_title: 'الخصوصية أولاً',
+				diff2_desc: 'بياناتك لا تُباع أبداً. لا إعلانات مستهدفة. أبداً. التشفير من طرف إلى طرف هو الافتراضي، وليس خياراً.',
+				diff3_title: 'لا تبعية خارجية',
+				diff3_desc: 'جميع الخدمات تعمل على بنية تحتية مستقلة، بعيداً عن سيطرة الطرف الثالث. لا تبعية لسحابات التكنولوجيا الكبرى.',
+				diff4_title: 'شفاف ومفتوح',
+				diff4_desc: 'هندسة نظام واضحة. لا خوارزميات مخفية. لا صناديق سوداء. يمكنك أن تفهم بالضبط كيف تتدفق بياناتك.',
+				diff5_title: 'جاهز للمستقبل',
+				diff5_desc: 'تُضاف خدمات جديدة باستمرار مع نمو النظام البيئي. تتطور المنصة مع احتياجاتك.',
+				diff6_title: 'مدفوع بالمجتمع',
+				diff6_desc: 'ملاحظات المستخدمين تشكل المنصة. أنت لست مجرد مستخدم؛ أنت جزء من التطور.',
+				diff7_title: 'لا أجندة سياسية',
+				diff7_desc: 'أكيو هي منصة تقنية، وليست منظمة سياسية. نحن نقدم أدوات، لا آراء.',
+				diff8_title: 'صفر استخراج بيانات',
+				diff8_desc: 'بياناتك ملك لك، وليس لنا. نحن لا نستخرج أو نحلل أو نستثمر معلوماتك الشخصية. نقطة.'
+			},
+			tr: {
+				hero_badge: 'Çağırma Büyüsü',
+				hero_subtitle: 'Tek hesap. İhtiyacınız olan her şey. E-posta, bankacılık, mesajlaşma, sosyal medya, video ve yapay zeka — hepsi tek bir yerde.',
+				founder: 'Saadi Esfandiar tarafından kuruldu ve inşa edildi — Tek Geliştirici ve Mimar',
+				btn_enter_platform: 'Accio Platformuna Gir',
+				btn_create_account: 'Hesap Oluştur',
+				story_title: 'Accio Hikayesi',
+				story_body_p1: 'Accio, Harry Potter dünyasından Çağırma Büyüsüdür. Bu büyüyle, uzaktaki herhangi bir nesne büyücüye doğru uçar. Kelime Latince "accire" (çağırmak) anlamına gelir.',
+				story_body_p2: 'Bu isim seçildi çünkü Accio her şeyi size getirir: e-posta, bankacılık, mesajlaşma, sosyal medya, video ve yapay zeka — hepsi tek bir hesapta.',
+				philosophy_title: 'Accio Adlı Kara Delik',
+				philosophy_body_p1: 'Bir galaksinin merkezinde devasa bir kara delik hayal edin — her ��ey ona doğru çekilir. Işık, madde, zaman. Accio tam olarak budur.',
+				logo_title: 'İmkansız Üçgen',
+				logo_body: 'Accio logosu imkansız bir üçgendir (Penrose üçgeni). İmkansız koşullardan doğuşun sembolüdür. Tıpkı Accio büyüsü gibi, ulaşılamaz görüneni çağırır.',
+				services_title: 'Accio Ekosistemi',
+				services_subtitle: 'Yedi hizmet, tek hesap, sonsuz olasılık.',
+				diffs_title: 'Accio Farkı',
+				diffs_subtitle: 'Accio\'yu seçmek için sekiz neden.',
+				cta_title: 'Accio Dünyasına Girmeye Hazır mısınız?',
+				cta_body: 'Bugün Accio\'ya katılın. Tek hesap, sonsuz hizmet. Birleşik dijital hayatınız sizi bekliyor.',
+				btn_goto_platform: 'Accio Platformuna Git',
+				footer_text: '© 2026 Accio. Saadi Esfandiar tarafından inşa edildi. Tüm hakları saklıdır.',
+				available: 'Kullanılabilir',
+				coming_soon: 'Çok Yakında',
+				amail_desc: 'Tam uçtan uca şifrelemeli profesyonel e-posta hizmeti. Özel alan adları, ekler için bulut depolama, akıllı filtreler, otomatik yanıt ve gelişmiş spam koruması.',
+				gringotts_desc: 'Galleon cüzdanlı tam dijital bankacılık. IBAN\'lı sanal banka kartları, karttan karta anında transfer, Paya, Satna ve PEL ödeme sistemleri.',
+				hedwig_desc: 'Uçtan uca şifrelemeli güvenli mesajlaşma. Kaybolan mesajlar, grup sohbetleri, kanallar, özel çıkartmalar ve tepkiler. Sunucu tarafında depolama yok.',
+				lumos_desc: 'Yaratıcılar, sanatçılar ve düşünürler için bir sosyal ağ. Uzun ve kısa içerik yayınlayın, portföy sergileyin, özel forumlara katılın.',
+				weasley_desc: 'İçerik üreticileri için uzun formatlı video platformu. 4K yükleme, özel kanallar, şeffaf gelir elde etme, canlı yayın ve otomatik çok dilli altyazı.',
+				granger_desc: 'Yetenek keşfi için kısa formatlı video platformu. 15-60 saniyelik videolar, akıllı yetenek avı, yaratıcı zorluklar ve trendler, dahili düzenleme araçları.',
+				hermione_desc: 'Doğal metin işlemeli gelişmiş yapay zeka asistanı. Yazma, planlama ve araştırmada yardımcı olur. 20 dil arasında anında çeviri.',
+				diff1_title: 'Tek Hesap, Her Şey',
+				diff1_desc: 'Tek bir kayıtla yedi hizmetin tümüne erişirsiniz. Artık dağınık dijital kimlik yok. Tek giriş, tek pano, kusursuz bir deneyim.',
+				diff2_title: 'Önce Gizlilik',
+				diff2_desc: 'Verileriniz asla satılmaz. Hedefli reklam yok. Asla. Uçtan uca şifreleme varsayılandır, bir seçenek değil.',
+				diff3_title: 'Dış Bağımlılık Yok',
+				diff3_desc: 'Tüm hizmetler bağımsız altyapıda çalışır, üçüncü taraf kontrolünden bağımsızdır.',
+				diff4_title: 'Şeffaf ve Açık',
+				diff4_desc: 'Net sistem mimarisi. Gizli algoritmalar yok. Kara kutular yok. Verilerinizin nasıl aktığını tam olarak anlayabilirsiniz.',
+				diff5_title: 'Geleceğe Hazır',
+				diff5_desc: 'Ekosistem büyüdükçe sürekli yeni hizmetler eklenir. Platform ihtiyaçlarınızla birlikte gelişir.',
+				diff6_title: 'Topluluk Odaklı',
+				diff6_desc: 'Kullanıcı geri bildirimi platformu şekillendirir. Sadece bir kullanıcı değilsiniz; evrimin bir parçasısınız.',
+				diff7_title: 'Politik Gündem Yok',
+				diff7_desc: 'Accio bir teknoloji platformudur, politik bir organizasyon değil. Araçlar sağlarız, fikirler değil.',
+				diff8_title: 'Sıfır Veri Madenciliği',
+				diff8_desc: 'Verileriniz size aittir, bize değil. Kişisel bilgilerinizi çıkarmaz, analiz etmez veya paraya çevirmeyiz.'
+			},
+			ru: {
+				hero_badge: 'Заклинание призыва',
+				hero_subtitle: 'Один аккаунт. Всё, что вам нужно. Почта, банкинг, мессенджер, соцсети, видео и ИИ — всё в одном месте.',
+				founder: 'Основано и создано Саади Эсфандияром — Единственный разработчик и архитектор',
+				btn_enter_platform: 'Войти в платформу Accio',
+				btn_create_account: 'Создать аккаунт',
+				story_title: 'История Accio',
+				story_body_p1: 'Accio — это заклинание призыва из мира Гарри Поттера. С этим заклинанием любой удалённый предмет летит к произносящему его человеку.',
+				story_body_p2: 'Это имя выбрано потому, что Accio приносит вам всё: почту, банкинг, мессенджер, соцсети, видео и искусственный интеллект — всё в одном едином аккаунте.',
+				philosophy_title: 'Чёрная дыра по имени Accio',
+				philosophy_body_p1: 'Представьте колоссальную чёрную дыру в центре галактики — всё притягивается к ней. Свет, материя, время. Accio — это именно это.',
+				logo_title: 'Невозможный треугольник',
+				logo_body: 'Логотип Accio — невозможный треугольник (треугольник Пенроуза). Это символ появления из невозможных условий. Как заклинание Accio, он призывает то, что кажется недостижимым.',
+				services_title: 'Экосистема Accio',
+				services_subtitle: 'Семь сервисов, один аккаунт, безграничные возможности.',
+				diffs_title: 'Что отличает Accio',
+				diffs_subtitle: 'Восемь причин выбрать Accio.',
+				cta_title: 'Готовы войти в мир Accio?',
+				cta_body: 'Присоединяйтесь к Accio сегодня. Один аккаунт, бесконечные сервисы. Ваша единая цифровая жизнь ждёт вас.',
+				btn_goto_platform: 'Перейти на платформу Accio',
+				footer_text: '© 2026 Accio. Создано Саади Эсфандияром. Все права защищены.',
+				available: 'Доступно',
+				coming_soon: 'Скоро',
+				amail_desc: 'Профессиональная почта с полным сквозным шифрованием. Собственные домены, облачное хранилище для вложений, умные фильтры, автоответ и продвинутая защита от спама.',
+				gringotts_desc: 'Полный цифровой банкинг с кошельком Галлеон. Виртуальные банковские карты с IBAN, мгновенные переводы между картами, системы платежей Paya, Satna и PEL.',
+				hedwig_desc: 'Безопасный мессенджер со сквозным шифрованием. Исчезающие сообщения, групповые чаты, каналы, пользовательские стикеры и реакции. Без хранения на сервере.',
+				lumos_desc: 'Социальная сеть для творцов, художников и мыслителей. Публикуйте длинный и короткий контент, выставляйте портфолио, присоединяйтесь к специализированным форумам.',
+				weasley_desc: 'Платформа для длинных видео для создателей контента. Загрузка в 4K, выделенные каналы, прозрачная монетизация, прямые трансляции и автоматические многоязычные субтитры.',
+				granger_desc: 'Платформа для коротких видео для поиска талантов. Видео от 15 до 60 секунд, умный поиск талантов, творческие вызовы и тренды, встроенные инструменты редактирования.',
+				hermione_desc: 'Продвинутый ИИ-ассистент с обработкой естественного текста. Помогает с написанием, планированием и исследованием. Мгновенный перевод между 20 языками.',
+				diff1_title: 'Один аккаунт, всё',
+				diff1_desc: 'С одной регистрацией вы получаете доступ ко всем семи сервисам. Больше нет разрозненной цифровой личности. Один логин, один дашборд, один опыт.',
+				diff2_title: 'Приватность в приоритете',
+				diff2_desc: 'Ваши данные никогда не продаются. Никаких целевых объявлений. Никогда. Сквозное шифрование — это стандарт, а не опция.',
+				diff3_title: 'Без внешних зависимостей',
+				diff3_desc: 'Все сервисы работают на независимой инфраструктуре, свободной от контроля третьих лиц. Никакой зависимости от облаков Big Tech.',
+				diff4_title: 'Прозрачно и открыто',
+				diff4_desc: 'Чёткая архитектура системы. Никаких скрытых алгоритмов. Никаких чёрных ящиков. Вы можете точно понять, как течёт ваша информация.',
+				diff5_title: 'Готово к будущему',
+				diff5_desc: 'Новые сервисы постоянно добавляются по мере роста экосистемы. Платформа развивается вместе с вашими потребностями.',
+				diff6_title: 'Движимо сообществом',
+				diff6_desc: 'Обратная связь пользователей формирует платформу. Вы не просто пользователь; вы часть эволюции.',
+				diff7_title: 'Без политической повестки',
+				diff7_desc: 'Accio — это технологическая платформа, а не политическая организация. Мы предоставляем инструменты, а не мнения.',
+				diff8_title: 'Ноль добычи данных',
+				diff8_desc: 'Ваши данные принадлежат вам, а не нам. Мы не добываем, не анализируем и не монетизируем вашу личную информацию.'
+			},
+			de: {
+				hero_badge: 'Der Beschwörungszauber',
+				hero_subtitle: 'Ein Konto. Alles, was Sie brauchen. E-Mail, Banking, Messaging, Social Media, Video und KI — alles an einem Ort.',
+				founder: 'Gegründet und entwickelt von Saadi Esfandiar — Alleiniger Entwickler und Architekt',
+				btn_enter_platform: 'Accio Plattform betreten',
+				btn_create_account: 'Konto erstellen',
+				story_title: 'Die Geschichte von Accio',
+				story_body_p1: 'Accio ist der Beschwörungszauber aus der Welt von Harry Potter. Mit diesem Zauber fliegt jeder entfernte Gegenstand zum Zauberer.',
+				story_body_p2: 'Dieser Name wurde gewählt, weil Accio alles zu Ihnen bringt: E-Mail, Banking, Messaging, Social Media, Video und künstliche Intelligenz — alles in einem einzigen Konto.',
+				philosophy_title: 'Das Schwarze Loch namens Accio',
+				philosophy_body_p1: 'Stellen Sie sich ein kolossales schwarzes Loch im Zentrum einer Galaxie vor — alles wird davon angezogen. Licht, Materie, Zeit. Genau das ist Accio.',
+				logo_title: 'Das unmögliche Dreieck',
+				logo_body: 'Das Logo von Accio ist ein unmögliches Dreieck (Penrose-Dreieck). Es ist ein Symbol für das Entstehen aus unmöglichen Bedingungen. Wie der Accio-Zauber ruft es herbei, was unerreichbar scheint.',
+				services_title: 'Accio Ökosystem',
+				services_subtitle: 'Sieben Dienste, ein Konto, endlose Möglichkeiten.',
+				diffs_title: 'Was Accio anders macht',
+				diffs_subtitle: 'Acht Gründe, Accio zu wählen.',
+				cta_title: 'Bereit, die Welt von Accio zu betreten?',
+				cta_body: 'Treten Sie Accio noch heute bei. Ein Konto, unendliche Dienste. Ihr einheitliches digitales Leben erwartet Sie.',
+				btn_goto_platform: 'Zur Accio Plattform',
+				footer_text: '© 2026 Accio. Erstellt von Saadi Esfandiar. Alle Rechte vorbehalten.',
+				available: 'Verfügbar',
+				coming_soon: 'Demnächst',
+				amail_desc: 'Professioneller E-Mail-Dienst mit vollständiger Ende-zu-Ende-Verschlüsselung. Eigene Domains, Cloud-Speicher für Anhänge, intelligente Filter, automatische Antwort und fortgeschrittener Spamschutz.',
+				gringotts_desc: 'Komplettes digitales Banking mit Galleon-Börse. Virtuelle Bankkarten mit IBAN, sofortige Karte-zu-Karte-Überweisungen, Paya-, Satna- und PEL-Zahlungssysteme.',
+				hedwig_desc: 'Sicherer Messenger mit Ende-zu-Ende-Verschlüsselung. Verschwindende Nachrichten, Gruppenchats, Kanäle, benutzerdefinierte Sticker und Reaktionen.',
+				lumos_desc: 'Ein soziales Netzwerk für Kreative, Künstler und Denker. Veröffentlichen Sie lange und kurze Inhalte, präsentieren Sie Portfolios, treten Sie spezialisierten Foren bei.',
+				weasley_desc: 'Langformat-Videoplattform für Content Creator. 4K-Uploads, eigene Kanäle, transparente Monetarisierung, Live-Streaming und automatische mehrsprachige Untertitel.',
+				granger_desc: 'Kurzformat-Videoplattform zur Talententdeckung. 15-60 Sekunden Videos, intelligente Talentsuche, kreative Herausforderungen und Trends, integrierte Bearbeitungswerkzeuge.',
+				hermione_desc: 'Fortschrittlicher KI-Assistent mit natürlicher Textverarbeitung. Hilft beim Schreiben, Planen und Recherchieren. Sofortübersetzung zwischen 20 Sprachen.',
+				diff1_title: 'Ein Konto, alles',
+				diff1_desc: 'Mit einer einzigen Anmeldung erhalten Sie Zugang zu allen sieben Diensten. Keine verstreute digitale Identität mehr.',
+				diff2_title: 'Privatsphäre zuerst',
+				diff2_desc: 'Ihre Daten werden niemals verkauft. Keine zielgerichtete Werbung. Niemals. Ende-zu-Ende-Verschlüsselung ist Standard, keine Option.',
+				diff3_title: 'Keine externen Abhängigkeiten',
+				diff3_desc: 'Alle Dienste laufen auf unabhängiger Infrastruktur, frei von Fremdkontrolle.',
+				diff4_title: 'Transparent und offen',
+				diff4_desc: 'Klare Systemarchitektur. Keine versteckten Algorithmen. Keine Black Boxes. Sie können genau verstehen, wie Ihre Daten fließen.',
+				diff5_title: 'Zukunftsbereit',
+				diff5_desc: 'Neue Dienste werden kontinuierlich hinzugefügt, während das Ökosystem wächst.',
+				diff6_title: 'Gemeinschaftsgetrieben',
+				diff6_desc: 'Nutzerfeedback formt die Plattform. Sie sind nicht nur ein Nutzer; Sie sind Teil der Evolution.',
+				diff7_title: 'Keine politische Agenda',
+				diff7_desc: 'Accio ist eine Technologieplattform, keine politische Organisation. Wir stellen Werkzeuge bereit, keine Meinungen.',
+				diff8_title: 'Null Datenschürfung',
+				diff8_desc: 'Ihre Daten gehören Ihnen, nicht uns. Wir schürfen, analysieren oder monetarisieren Ihre persönlichen Daten nicht.'
+			},
+			es: {
+				hero_badge: 'El Encantamiento de Convocación',
+				hero_subtitle: 'Una cuenta. Todo lo que necesitas. Correo, banca, mensajería, redes sociales, video e IA — todo reunido en un solo lugar.',
+				founder: 'Fundado y construido por Saadi Esfandiar — Único Desarrollador y Arquitecto',
+				btn_enter_platform: 'Entrar en la Plataforma Accio',
+				btn_create_account: 'Crear Cuenta',
+				story_title: 'La Historia de Accio',
+				story_body_p1: 'Accio es el Encantamiento de Convocación del mundo de Harry Potter. Con este hechizo, cualquier objeto distante vuela hacia el lanzador.',
+				story_body_p2: 'Este nombre fue elegido porque Accio te lo trae todo: correo, banca, mensajería, redes sociales, video e inteligencia artificial — todo en una sola cuenta.',
+				philosophy_title: 'El Agujero Negro Llamado Accio',
+				philosophy_body_p1: 'Imagina un agujero negro colosal en el centro de una galaxia — todo es atraído hacia él. Luz, materia, tiempo. Accio es exactamente eso.',
+				logo_title: 'El Triángulo Imposible',
+				logo_body: 'El logo de Accio es un triángulo imposible (triángulo de Penrose). Es un símbolo de surgir de condiciones imposibles. Como el hechizo Accio, convoca lo que parece inalcanzable.',
+				services_title: 'Ecosistema Accio',
+				services_subtitle: 'Siete servicios, una cuenta, posibilidades infinitas.',
+				diffs_title: 'Qué hace diferente a Accio',
+				diffs_subtitle: 'Ocho razones para elegir Accio.',
+				cta_title: '¿Listo para Entrar en el Mundo de Accio?',
+				cta_body: 'Únete a Accio hoy. Una cuenta, servicios infinitos. Tu vida digital unificada te espera.',
+				btn_goto_platform: 'Ir a la Plataforma Accio',
+				footer_text: '© 2026 Accio. Construido por Saadi Esfandiar. Todos los derechos reservados.',
+				available: 'Disponible',
+				coming_soon: 'Próximamente',
+				amail_desc: 'Servicio de correo profesional con cifrado completo de extremo a extremo. Dominios personalizados, almacenamiento en la nube para archivos adjuntos, filtros inteligentes, respuesta automática y protección avanzada contra spam.',
+				gringotts_desc: 'Banca digital completa con monedero Galleon. Tarjetas bancarias virtuales con IBAN, transferencias instantáneas de tarjeta a tarjeta, sistemas de pago Paya, Satna y PEL.',
+				hedwig_desc: 'Mensajería segura con cifrado de extremo a extremo. Mensajes que desaparecen, chats grupales, canales, stickers y reacciones personalizados.',
+				lumos_desc: 'Una red social para creadores, artistas y pensadores. Publica contenido largo y corto, muestra portafolios, únete a foros especializados.',
+				weasley_desc: 'Plataforma de video de formato largo para creadores de contenido. Subidas en 4K, canales dedicados, monetización transparente, transmisión en vivo y subtítulos automáticos multilingües.',
+				granger_desc: 'Plataforma de video de formato corto para descubrimiento de talentos. Videos de 15-60 segundos, búsqueda inteligente de talentos, desafíos y tendencias creativas, herramientas de edición integradas.',
+				hermione_desc: 'Asistente de IA avanzado con procesamiento de texto natural. Ayuda con escritura, planificación e investigación. Traducción instantánea entre 20 idiomas.',
+				diff1_title: 'Una Cuenta, Todo',
+				diff1_desc: 'Con un solo registro, accedes a los siete servicios. No más identidad digital dispersa.',
+				diff2_title: 'Privacidad Primero',
+				diff2_desc: 'Tus datos nunca se venden. Sin anuncios dirigidos. Nunca. El cifrado de extremo a extremo es por defecto, no una opción.',
+				diff3_title: 'Sin Dependencias Externas',
+				diff3_desc: 'Todos los servicios funcionan en infraestructura independiente, libre de control de terceros.',
+				diff4_title: 'Transparente y Abierto',
+				diff4_desc: 'Arquitectura de sistema clara. Sin algoritmos ocultos. Sin cajas negras. Puedes entender exactamente cómo fluyen tus datos.',
+				diff5_title: 'Preparado para el Futuro',
+				diff5_desc: 'Nuevos servicios se añaden continuamente a medida que el ecosistema crece.',
+				diff6_title: 'Impulsado por la Comunidad',
+				diff6_desc: 'Los comentarios de los usuarios dan forma a la plataforma. No eres solo un usuario; eres parte de la evolución.',
+				diff7_title: 'Sin Agenda Política',
+				diff7_desc: 'Accio es una plataforma tecnológica, no una organización política. Proporcionamos herramientas, no opiniones.',
+				diff8_title: 'Cero Minería de Datos',
+				diff8_desc: 'Tus datos te pertenecen a ti, no a nosotros. No extraemos, analizamos ni monetizamos tu información personal.'
+			},
+			fr: {
+				hero_badge: 'Le Sortilège d\'Invocation',
+				hero_subtitle: 'Un compte. Tout ce dont vous avez besoin. Email, banque, messagerie, réseaux sociaux, vidéo et IA — tout rassemblé en un seul endroit.',
+				founder: 'Fondé et construit par Saadi Esfandiar — Seul Développeur et Architecte',
+				btn_enter_platform: 'Entrer dans la Plateforme Accio',
+				btn_create_account: 'Créer un Compte',
+				story_title: 'L\'Histoire d\'Accio',
+				story_body_p1: 'Accio est le sortilège d\'invocation du monde de Harry Potter. Avec ce sort, tout objet distant vole vers le lanceur.',
+				story_body_p2: 'Ce nom a été choisi parce qu\'Accio vous apporte tout : email, banque, messagerie, réseaux sociaux, vidéo et intelligence artificielle — le tout dans un seul compte.',
+				philosophy_title: 'Le Trou Noir Appelé Accio',
+				philosophy_body_p1: 'Imaginez un trou noir colossal au centre d\'une galaxie — tout est attiré vers lui. Lumière, matière, temps. Accio est exactement cela.',
+				logo_title: 'Le Triangle Impossible',
+				logo_body: 'Le logo d\'Accio est un triangle impossible (triangle de Penrose). C\'est un symbole d\'émergence à partir de conditions impossibles. Comme le sortilège Accio, il convoque ce qui semble inaccessible.',
+				services_title: 'Écosystème Accio',
+				services_subtitle: 'Sept services, un compte, possibilités infinies.',
+				diffs_title: 'Ce qui rend Accio différent',
+				diffs_subtitle: 'Huit raisons de choisir Accio.',
+				cta_title: 'Prêt à Entrer dans le Monde d\'Accio ?',
+				cta_body: 'Rejoignez Accio aujourd\'hui. Un compte, des services infinis. Votre vie numérique unifiée vous attend.',
+				btn_goto_platform: 'Aller à la Plateforme Accio',
+				footer_text: '© 2026 Accio. Construit par Saadi Esfandiar. Tous droits réservés.',
+				available: 'Disponible',
+				coming_soon: 'Bientôt',
+				amail_desc: 'Service email professionnel avec chiffrement complet de bout en bout. Domaines personnalisés, stockage cloud pour pièces jointes, filtres intelligents, réponse automatique et protection avancée contre le spam.',
+				gringotts_desc: 'Banque numérique complète avec portefeuille Galleon. Cartes bancaires virtuelles avec IBAN, transferts instantanés de carte à carte, systèmes de paiement Paya, Satna et PEL.',
+				hedwig_desc: 'Messagerie sécurisée avec chiffrement de bout en bout. Messages éphémères, discussions de groupe, canaux, autocollants et réactions personnalisés.',
+				lumos_desc: 'Un réseau social pour les créateurs, artistes et penseurs. Publiez du contenu long et court, présentez des portfolios, rejoignez des forums spécialisés.',
+				weasley_desc: 'Plateforme vidéo longue durée pour les créateurs de contenu. Téléchargements 4K, chaînes dédiées, monétisation transparente, streaming en direct et sous-titres multilingues automatiques.',
+				granger_desc: 'Plateforme vidéo courte durée pour la découverte de talents. Vidéos de 15 à 60 secondes, recherche intelligente de talents, défis et tendances créatives, outils d\'édition intégrés.',
+				hermione_desc: 'Assistant IA avancé avec traitement du langage naturel. Aide à l\'écriture, la planification et la recherche. Traduction instantanée entre 20 langues.',
+				diff1_title: 'Un Compte, Tout',
+				diff1_desc: 'Avec une seule inscription, vous accédez aux sept services. Plus d\'identité numérique éparpillée.',
+				diff2_title: 'La Vie Privée d\'Abord',
+				diff2_desc: 'Vos données ne sont jamais vendues. Pas de publicités ciblées. Jamais. Le chiffrement de bout en bout est par défaut, pas une option.',
+				diff3_title: 'Aucune Dépendance Externe',
+				diff3_desc: 'Tous les services fonctionnent sur une infrastructure indépendante, sans contrôle de tiers.',
+				diff4_title: 'Transparent et Ouvert',
+				diff4_desc: 'Architecture système claire. Pas d\'algorithmes cachés. Pas de boîtes noires. Vous pouvez comprendre exactement comment vos données circulent.',
+				diff5_title: 'Prêt pour l\'Avenir',
+				diff5_desc: 'De nouveaux services sont continuellement ajoutés à mesure que l\'écosystème grandit.',
+				diff6_title: 'Piloté par la Communauté',
+				diff6_desc: 'Les retours des utilisateurs façonnent la plateforme. Vous n\'êtes pas juste un utilisateur ; vous faites partie de l\'évolution.',
+				diff7_title: 'Aucun Agenda Politique',
+				diff7_desc: 'Accio est une plateforme technologique, pas une organisation politique. Nous fournissons des outils, pas des opinions.',
+				diff8_title: 'Zéro Extraction de Données',
+				diff8_desc: 'Vos données vous appartiennent, pas à nous. Nous n\'extrayons, n\'analysons ni ne monétisons vos informations personnelles.'
+			},
+			zh: {
+				hero_badge: '召唤咒',
+				hero_subtitle: '一个账户。您需要的一切。电子邮件、银行、通讯、社交媒体、视频和人工智能——全部汇聚一处。',
+				founder: '由 Saadi Esfandiar 创建并构建 — 唯一开发者兼架构师',
+				btn_enter_platform: '进入 Accio 平台',
+				btn_create_account: '创建账户',
+				story_title: 'Accio 的故事',
+				story_body_p1: 'Accio 是哈利·波特世界中的召唤咒语。使用此咒语，任何远处的物体都会飞向施法者。',
+				story_body_p2: '选择这个名字是因为 Accio 将一切带给您：电子邮件、银行、通讯、社交媒体、视频和人工智能——全部在一个统一的账户中。',
+				philosophy_title: '名为 Accio 的黑洞',
+				philosophy_body_p1: '想象一个位于星系中心的巨大黑洞——一切都被拉向它。光、物质、时间。Accio 正是如此。',
+				logo_title: '不可能三角形',
+				logo_body: 'Accio 的标志是一个不可能三角形（彭罗斯三角形）。它是从不可能条件中崛起的象征。就像 Accio 咒语一样，它召唤看似遥不可及的东西。',
+				services_title: 'Accio 生态系统',
+				services_subtitle: '七项服务，一个账户，无限可能。',
+				diffs_title: 'Accio 的与众不同',
+				diffs_subtitle: '选择 Accio 的八个理由。',
+				cta_title: '准备好进入 Accio 的世界了吗？',
+				cta_body: '立即加入 Accio。一个账户，无限服务。您统一的数字生活等待着您。',
+				btn_goto_platform: '前往 Accio 平台',
+				footer_text: '© 2026 Accio。由 Saadi Esfandiar 构建。保留所有权利。',
+				available: '可用',
+				coming_soon: '即将推出',
+				amail_desc: '具有完全端到端加密的专业电子邮件服务。自定义域名、附件云存储、智能过滤器、自动回复和高级垃圾邮件防护。',
+				gringotts_desc: '带有 Galleon 钱包的完整数字银行。带有 IBAN 的虚拟银行卡、即时卡对卡转账、Paya、Satna 和 PEL 支付系统。',
+				hedwig_desc: '具有端到端加密的安全通讯。消失消息、群聊、频道、自定义贴纸和反应。无服务器端存储。',
+				lumos_desc: '面向创作者、艺术家和思想家的社交网络。发布长短内容，展示作品集，加入专业论坛。',
+				weasley_desc: '面向内容创作者的长视频平台。4K 上传、专用频道、透明收益、直播和自动多语言字幕。',
+				granger_desc: '用于人才发现的短视频平台。15-60 秒视频、智能人才搜索、创意挑战和趋势、内置编辑工具。',
+				hermione_desc: '具有自然语言处理功能的高级 AI 助手。帮助写作、规划和研究。20 种语言即时翻译。',
+				diff1_title: '一个账户，一切',
+				diff1_desc: '一次注册即可访问所有七项服务。不再有分散的数字身份。',
+				diff2_title: '隐私优先',
+				diff2_desc: '您的数据永远不会被出售。没有定向广告。永不。端到端加密是默认设置，而非选项。',
+				diff3_title: '无外部依赖',
+				diff3_desc: '所有服务在独立基础设施上运行，不受第三方控制。',
+				diff4_title: '透明开放',
+				diff4_desc: '清晰的系统架构。没有隐藏算法。没有黑箱。您可以准确理解数据如何流动。',
+				diff5_title: '面向未来',
+				diff5_desc: '随着生态系统的发展，新服务不断添加。平台与您的需求共同进化。',
+				diff6_title: '社区驱动',
+				diff6_desc: '用户反馈塑造平台。您不仅仅是用户；您是进化的一部分。',
+				diff7_title: '无政治议程',
+				diff7_desc: 'Accio 是一个技术平台，而非政治组织。我们提供工具，而非观点。',
+				diff8_title: '零数据挖掘',
+				diff8_desc: '您的数据属于您，而非我们。我们不挖掘、分析或货币化您的个人信息。'
+			},
+			ja: {
+				hero_badge: '呼び寄せ呪文',
+				hero_subtitle: '一つのアカウント。必要なものすべて。メール、バンキング、メッセージング、ソーシャルメディア、ビデオ、AI — すべて一つの場所に。',
+				founder: 'Saadi Esfandiar によって設立・構築 — 唯一の開発者兼アーキテクト',
+				btn_enter_platform: 'Accio プラットフォームへ',
+				btn_create_account: 'アカウント作成',
+				story_title: 'Accio の物語',
+				story_body_p1: 'Accio はハリー・ポッターの世界の呼び寄せ呪文です。この呪文で、遠くの物体が術者に向かって飛んでくる。',
+				story_body_p2: 'この名前が選ばれたのは、Accio がすべてをあなたにもたらすから：メール、バンキング、メッセージング、ソーシャルメディア、ビデオ、AI — すべてが一つの統一されたアカウント。',
+				philosophy_title: 'Accio という名のブラックホール',
+				philosophy_body_p1: '銀河の中心にある巨大なブラックホールを想像してください —
